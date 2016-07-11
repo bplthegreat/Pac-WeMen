@@ -1,1 +1,164 @@
-﻿  Project3.vcxproj -> D:\Project3\Release\Project3.exe
+﻿Build started 7/1/2016 4:38:18 AM.
+     1>Project "C:\Users\Bibek Shrestha\Desktop\Project3\Project3\Project3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /FR"Release\\" /Gd /TP /analyze- /errorReport:prompt ClassFood.cpp ClassGhost.cpp ClassMovingTexture.cpp ClassPacmen.cpp ClassPacmenData.cpp ClassTargets.cpp ClassTexture.cpp ClassVector.cpp Functions.cpp Page.cpp PlayMusic.cpp SButton.cpp Source.cpp STexture.cpp
+         ClassFood.cpp
+         ClassGhost.cpp
+         ClassMovingTexture.cpp
+         ClassPacmen.cpp
+         ClassPacmenData.cpp
+         ClassTargets.cpp
+         ClassTexture.cpp
+         ClassVector.cpp
+         Functions.cpp
+     1>Functions.cpp(34): warning C4474: 'printf' : too many arguments passed for format string
+         Functions.cpp(34): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+     1>Functions.cpp(240): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>Functions.cpp(243): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+         Page.cpp
+         PlayMusic.cpp
+         SButton.cpp
+         Source.cpp
+         STexture.cpp
+         Generating Code...
+     1>c:\users\bibek shrestha\desktop\project3\project3\stexture.cpp(75): warning C4715: 'STexture::loadFromFile': not all control paths return a value
+     1>c:\users\bibek shrestha\desktop\project3\project3\classtargets.cpp(43): warning C4715: 'ClassTargets::SetCollisionTargets': not all control paths return a value
+     1>c:\users\bibek shrestha\desktop\project3\project3\classpacmen.cpp(87): warning C4715: 'ClassPacmen::Operate': not all control paths return a value
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /l"0x0409" /nologo /fo"Release\Project3.res" Project3.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Bibek Shrestha\Desktop\Project3\Release\Project3.exe" /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib SDL2_ttf.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Bibek Shrestha\Desktop\Project3\Release\Project3.pdb" /OPT:REF /OPT:ICF /TLBID:1 /ENTRY:"WinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Bibek Shrestha\Desktop\Project3\Release\Project3.lib" /MACHINE:X86 /SAFESEH /FORCE:MULTIPLE Release\Project3.res
+         Release\ClassFood.obj
+         Release\ClassGhost.obj
+         Release\ClassMovingTexture.obj
+         Release\ClassPacmen.obj
+         Release\ClassPacmenData.obj
+         Release\ClassTargets.obj
+         Release\ClassTexture.obj
+         Release\ClassVector.obj
+         Release\Functions.obj
+         Release\Page.obj
+         Release\PlayMusic.obj
+         Release\SButton.obj
+         Release\Source.obj
+         Release\STexture.obj
+     1>Page.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::CheckCollision(struct SDL_Rect *,struct SDL_Rect *)" (?CheckCollision@FunctionIdentfiers@@YA_NPAUSDL_Rect@@0@Z) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::Close(void)" (?Close@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::DeleteEverything(void)" (?DeleteEverything@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::EntryLoop(void)" (?EntryLoop@FunctionIdentfiers@@YAHXZ) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "void __cdecl Free(struct SDL_Surface *)" (?Free@@YAXPAUSDL_Surface@@@Z) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::Hello(char *)" (?Hello@FunctionIdentfiers@@YAHPAD@Z) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Initialisation(void)" (?Initialisation@FunctionIdentfiers@@YA_NXZ) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Pause(struct SDL_Renderer *)" (?Pause@FunctionIdentfiers@@YA_NPAUSDL_Renderer@@@Z) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::ShowRect(struct SDL_Rect *)" (?ShowRect@FunctionIdentfiers@@YAXPAUSDL_Rect@@@Z) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "struct _Mix_Music * Music::ptr" (?ptr@Music@@3PAU_Mix_Music@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "struct SDL_Window * gWindow" (?gWindow@@3PAUSDL_Window@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "struct SDL_Renderer * gRenderer" (?gRenderer@@3PAUSDL_Renderer@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "union SDL_Event e" (?e@@3TSDL_Event@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "enum screen current_page" (?current_page@@3W4screen@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Begin" (?Begin@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Chomp" (?Chomp@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Eat" (?Eat@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Death" (?Death@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Inter" (?Inter@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Click" (?Click@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Hover" (?Hover@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic Naruto_fighting_spirit" (?Naruto_fighting_spirit@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Page.obj : warning LNK4006: "class PlayMusic background_music" (?background_music@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::CheckCollision(struct SDL_Rect *,struct SDL_Rect *)" (?CheckCollision@FunctionIdentfiers@@YA_NPAUSDL_Rect@@0@Z) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::Close(void)" (?Close@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::DeleteEverything(void)" (?DeleteEverything@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::EntryLoop(void)" (?EntryLoop@FunctionIdentfiers@@YAHXZ) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "void __cdecl Free(struct SDL_Surface *)" (?Free@@YAXPAUSDL_Surface@@@Z) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::Hello(char *)" (?Hello@FunctionIdentfiers@@YAHPAD@Z) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Initialisation(void)" (?Initialisation@FunctionIdentfiers@@YA_NXZ) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Pause(struct SDL_Renderer *)" (?Pause@FunctionIdentfiers@@YA_NPAUSDL_Renderer@@@Z) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::ShowRect(struct SDL_Rect *)" (?ShowRect@FunctionIdentfiers@@YAXPAUSDL_Rect@@@Z) already defined in Functions.obj; second definition ignored
+     1>PlayMusic.obj : warning LNK4006: "struct _Mix_Music * Music::ptr" (?ptr@Music@@3PAU_Mix_Music@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::CheckCollision(struct SDL_Rect *,struct SDL_Rect *)" (?CheckCollision@FunctionIdentfiers@@YA_NPAUSDL_Rect@@0@Z) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::Close(void)" (?Close@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::DeleteEverything(void)" (?DeleteEverything@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::EntryLoop(void)" (?EntryLoop@FunctionIdentfiers@@YAHXZ) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "void __cdecl Free(struct SDL_Surface *)" (?Free@@YAXPAUSDL_Surface@@@Z) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::Hello(char *)" (?Hello@FunctionIdentfiers@@YAHPAD@Z) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Initialisation(void)" (?Initialisation@FunctionIdentfiers@@YA_NXZ) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Pause(struct SDL_Renderer *)" (?Pause@FunctionIdentfiers@@YA_NPAUSDL_Renderer@@@Z) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::ShowRect(struct SDL_Rect *)" (?ShowRect@FunctionIdentfiers@@YAXPAUSDL_Rect@@@Z) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "struct _Mix_Music * Music::ptr" (?ptr@Music@@3PAU_Mix_Music@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "struct SDL_Window * gWindow" (?gWindow@@3PAUSDL_Window@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "struct SDL_Renderer * gRenderer" (?gRenderer@@3PAUSDL_Renderer@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "union SDL_Event e" (?e@@3TSDL_Event@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Begin" (?Begin@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Chomp" (?Chomp@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Eat" (?Eat@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Death" (?Death@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Inter" (?Inter@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Click" (?Click@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Hover" (?Hover@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic Naruto_fighting_spirit" (?Naruto_fighting_spirit@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>SButton.obj : warning LNK4006: "class PlayMusic background_music" (?background_music@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::CheckCollision(struct SDL_Rect *,struct SDL_Rect *)" (?CheckCollision@FunctionIdentfiers@@YA_NPAUSDL_Rect@@0@Z) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::Close(void)" (?Close@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::DeleteEverything(void)" (?DeleteEverything@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::EntryLoop(void)" (?EntryLoop@FunctionIdentfiers@@YAHXZ) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "void __cdecl Free(struct SDL_Surface *)" (?Free@@YAXPAUSDL_Surface@@@Z) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::Hello(char *)" (?Hello@FunctionIdentfiers@@YAHPAD@Z) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Initialisation(void)" (?Initialisation@FunctionIdentfiers@@YA_NXZ) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Pause(struct SDL_Renderer *)" (?Pause@FunctionIdentfiers@@YA_NPAUSDL_Renderer@@@Z) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::ShowRect(struct SDL_Rect *)" (?ShowRect@FunctionIdentfiers@@YAXPAUSDL_Rect@@@Z) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "struct SDL_Rect Clip" (?Clip@@3USDL_Rect@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "unsigned short ticks" (?ticks@@3GA) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "bool quit" (?quit@@3_NA) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "enum winner Winner" (?Winner@@3W4winner@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "struct _Mix_Music * Music::ptr" (?ptr@Music@@3PAU_Mix_Music@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "struct SDL_Window * gWindow" (?gWindow@@3PAUSDL_Window@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "struct SDL_Renderer * gRenderer" (?gRenderer@@3PAUSDL_Renderer@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "union SDL_Event e" (?e@@3TSDL_Event@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "enum screen current_page" (?current_page@@3W4screen@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Begin" (?Begin@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Chomp" (?Chomp@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Eat" (?Eat@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Death" (?Death@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Inter" (?Inter@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Click" (?Click@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Hover" (?Hover@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic Naruto_fighting_spirit" (?Naruto_fighting_spirit@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class PlayMusic background_music" (?background_music@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page StartPage" (?StartPage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page MenuPage" (?MenuPage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page VsPage" (?VsPage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page GamePage" (?GamePage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page WinPage" (?WinPage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page HowtoPlayPage" (?HowtoPlayPage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>Source.obj : warning LNK4006: "class Page Aboutpage" (?Aboutpage@@3VPage@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::CheckCollision(struct SDL_Rect *,struct SDL_Rect *)" (?CheckCollision@FunctionIdentfiers@@YA_NPAUSDL_Rect@@0@Z) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::Close(void)" (?Close@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::DeleteEverything(void)" (?DeleteEverything@FunctionIdentfiers@@YAXXZ) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::EntryLoop(void)" (?EntryLoop@FunctionIdentfiers@@YAHXZ) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "void __cdecl Free(struct SDL_Surface *)" (?Free@@YAXPAUSDL_Surface@@@Z) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "int __cdecl FunctionIdentfiers::Hello(char *)" (?Hello@FunctionIdentfiers@@YAHPAD@Z) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Initialisation(void)" (?Initialisation@FunctionIdentfiers@@YA_NXZ) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "bool __cdecl FunctionIdentfiers::Pause(struct SDL_Renderer *)" (?Pause@FunctionIdentfiers@@YA_NPAUSDL_Renderer@@@Z) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "void __cdecl FunctionIdentfiers::ShowRect(struct SDL_Rect *)" (?ShowRect@FunctionIdentfiers@@YAXPAUSDL_Rect@@@Z) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "struct _Mix_Music * Music::ptr" (?ptr@Music@@3PAU_Mix_Music@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "struct SDL_Window * gWindow" (?gWindow@@3PAUSDL_Window@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "struct SDL_Renderer * gRenderer" (?gRenderer@@3PAUSDL_Renderer@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Begin" (?Begin@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Chomp" (?Chomp@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Eat" (?Eat@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Death" (?Death@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Inter" (?Inter@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Click" (?Click@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Hover" (?Hover@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic Naruto_fighting_spirit" (?Naruto_fighting_spirit@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>STexture.obj : warning LNK4006: "class PlayMusic background_music" (?background_music@@3VPlayMusic@@A) already defined in Functions.obj; second definition ignored
+     1>LINK : warning LNK4031: no subsystem specified; CONSOLE assumed
+     1>C:\Users\Bibek Shrestha\Desktop\Project3\Release\Project3.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+         Project3.vcxproj -> C:\Users\Bibek Shrestha\Desktop\Project3\Release\Project3.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Bibek Shrestha\Desktop\Project3\Release\Project3.bsc" /n Release\ClassFood.sbr Release\ClassGhost.sbr Release\ClassMovingTexture.sbr Release\ClassPacmen.sbr Release\ClassPacmenData.sbr Release\ClassTargets.sbr Release\ClassTexture.sbr Release\ClassVector.sbr Release\Functions.sbr Release\Page.sbr Release\PlayMusic.sbr Release\SButton.sbr Release\Source.sbr Release\STexture.sbr
+     1>Done Building Project "C:\Users\Bibek Shrestha\Desktop\Project3\Project3\Project3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.06

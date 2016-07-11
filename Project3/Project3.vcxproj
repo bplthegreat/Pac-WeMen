@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D9B595BE-1E86-409E-973E-431C1B8DC809}</ProjectGuid>
     <RootNamespace>Project3</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -25,7 +26,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -39,12 +40,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Bipin\Downloads\SDL\SDL2-devel-2.0.4-VC\SDL2-2.0.4\include;F:\SDL\SDL 2\Codes\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Bipin\Downloads\SDL\SDL2-devel-2.0.4-VC\SDL2-2.0.4\lib\x86;F:\SDL\SDL 2\Codes\SDL2-2.0.4\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\SDL\SDL2-2.0.4VC++\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\SDL\SDL2-2.0.4VC++\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\Bipin\Downloads\SDL\SDL2-devel-2.0.4-VC\SDL2-2.0.4\include;F:\SDL\SDL 2\Codes\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Bipin\Downloads\SDL\SDL2-devel-2.0.4-VC\SDL2-2.0.4\lib\x86;F:\SDL\SDL 2\Codes\SDL2-2.0.4\lib\x86;F:\SDL\SDL 2\Codes\SDL2-2.0.4\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Bipin\Downloads\SDL\SDL2-devel-2.0.4-VC\SDL2-2.0.4\include;F:\SDL\SDL2-2.0.4VC++\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Bipin\Downloads\SDL\SDL2-devel-2.0.4-VC\SDL2-2.0.4\lib\x86;F:\SDL\SDL2-2.0.4VC++\lib\x86;F:\SDL\SDL 2\Codes\SDL2-2.0.4\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

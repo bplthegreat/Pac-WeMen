@@ -38,6 +38,7 @@ namespace FunctionIdentfiers{
     }
     bool CheckCollision(SDL_Rect *, SDL_Rect *);
     void ShowRect(SDL_Rect *);
+	void DeleteEverything();
 };
 
 

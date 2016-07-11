@@ -277,21 +277,42 @@ void setup_pause_page(void)
 }
 void setup_win_page(void)
 {
-	Page::background_clear_render(0, 0, 0, 0xff);
-
-	set_clip(0, 0, WinPage.picture[0].getWidth(), WinPage.picture[0].getHeight());
-
-	if (Winner==PLAYER1)
+	bool GoFlag = false;
+	SDL_Event EventWhilePaused;
+	while (!GoFlag)
 	{
+		Page::background_clear_render(0, 0, 0, 0xff);
+
+		set_clip(0, 0, WinPage.picture[0].getWidth(), WinPage.picture[0].getHeight());
+
+		if (Winner == PLAYER1)
+		{
+
+			WinPage.picture[0].render(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, &Clip, 0, NULL, SDL_FLIP_NONE);
+		}
+		else
+		{
+			WinPage.picture[1].render(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, &Clip, 0, NULL, SDL_FLIP_NONE);
+		}
+
 		
-		WinPage.picture[0].render(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, &Clip, 0, NULL, SDL_FLIP_NONE);
+		while (SDL_PollEvent(&EventWhilePaused) != 0)
+		{
+			if (EventWhilePaused.type == SDL_QUIT)
+				GoFlag = true;
+			if (EventWhilePaused.type == SDL_KEYDOWN)
+				switch (EventWhilePaused.key.keysym.sym)
+				{
+				default:
+					GoFlag = true;
+				}
+		}
+		SDL_RenderPresent(gRenderer);
 	}
-	else
-	{
-		WinPage.picture[1].render(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, &Clip, 0, NULL, SDL_FLIP_NONE);
-	}
+
 	current_page = START_PAGE;
 }
+
 void setup_howtoplay_page(void)
 {
 	Page::background_clear_render(0, 0, 0, 0xff);
@@ -346,7 +367,7 @@ void setup_about_page(void)
 void setup_game_page(void)
 {
 	int x;
-	x=FunctionIdentfiers::EntryLoop();
+	x = FunctionIdentfiers::EntryLoop();
 	if (x == 1)
 	{
 		Winner = PLAYER1;
@@ -354,6 +375,25 @@ void setup_game_page(void)
 	else if (x == 2)
 	{
 		Winner = PLAYER2;
+	}
+	bool GoFlag = false;
+	while (!GoFlag)
+	{
+
+		SDL_Event EventWhilePaused;
+		while (SDL_PollEvent(&EventWhilePaused) != 0)
+		{
+			if (EventWhilePaused.type == SDL_QUIT)
+				GoFlag = true;
+			if (EventWhilePaused.type == SDL_KEYDOWN)
+				switch (EventWhilePaused.key.keysym.sym)
+				{
+				default:
+					GoFlag = true;
+					
+				}
+		}
+		
 	}
 	if (x == 0)
 		current_page = MENU_PAGE;

@@ -70,6 +70,7 @@ void FunctionIdentfiers::Close()
     IMG_Quit();
     SDL_Quit();
 }
+
 int FunctionIdentfiers::Hello(char *str)
 {
     int a = 37;
@@ -82,12 +83,13 @@ int FunctionIdentfiers::EntryLoop()
     int PACMEN_1 = 1;
 	int PACMEN_2 = 2;
     Side Winner = SIDE_0;
-    ClassPacmen PacMan1(5,5, SIDE_1);
-    ClassPacmen PacMan2(200,200, SIDE_2);
-    ClassMovingTexture a(500,400);
-    ClassMovingTexture b(700,300);
-    ClassMovingTexture c(100,400);
-    ClassMovingTexture d(300,300);
+	//initialise the gameplay screen elements
+    ClassPacmen PacMan1(185,180, SIDE_1);
+    ClassPacmen PacMan2(590,180, SIDE_2);
+//    ClassMovingTexture a(500,400);
+//    ClassMovingTexture b(700,300);
+//    ClassMovingTexture c(100,400);
+//    ClassMovingTexture d(300,300);
     //ClassGhost G1(765, 360, SIDE_2);
     ClassGhost Ghost[6] = {ClassGhost( 360, 360, SIDE_1), ClassGhost(365,5, SIDE_1), ClassGhost(10, 355, SIDE_1),
                            ClassGhost( 765, 260, SIDE_2), ClassGhost(765,5, SIDE_2), ClassGhost(410, 365, SIDE_2) };
@@ -207,16 +209,16 @@ int FunctionIdentfiers::EntryLoop()
         SDL_SetRenderDrawColor(MainRenderer, 0xFF, 0x7F, 0x7F, 0xFF);
 
         SDL_RenderDrawRect(MainRenderer,&GameZone);
-        a.SetCollisionTargets();
-        b.SetCollisionTargets();
-        c.SetCollisionTargets();
-        d.SetCollisionTargets();
+ //       a.SetCollisionTargets();
+ //       b.SetCollisionTargets();
+ //       c.SetCollisionTargets();
+//        d.SetCollisionTargets();
         Background.Render(MainRenderer, ORIGIN_XY,ORIGIN_XY);
 
-        SDL_RenderDrawRects(MainRenderer, d.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
-        SDL_RenderDrawRects(MainRenderer, c.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
-        SDL_RenderDrawRects(MainRenderer, b.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
-        SDL_RenderDrawRects(MainRenderer, a.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
+       // SDL_RenderDrawRects(MainRenderer, d.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
+       // SDL_RenderDrawRects(MainRenderer, c.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
+       // SDL_RenderDrawRects(MainRenderer, b.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
+       // SDL_RenderDrawRects(MainRenderer, a.CurrentCollisionTargets, NO_OF_COLLISION_TARGETS);
 
         SDL_SetRenderDrawColor(MainRenderer, 0x00, 0x0F,0xFF,0xF7);
 
@@ -368,4 +370,10 @@ void Free(SDL_Surface *Surface)
 void FunctionIdentfiers::ShowRect(SDL_Rect* A)
 {
     cout << "x,y = " << A->x << ',' << A->y << "  h, w = " << A->h << ',' << A->w;
+}
+
+
+void FunctionIdentfiers::DeleteEverything()
+{
+	
 }

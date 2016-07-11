@@ -151,5 +151,7 @@ void SetFoodLocation( ClassFood *Food)
         }
     }
     int CurrentFoodCount = (iX -1) * ( iY -1) * 2;
+	ClassFood::Side_AFood = CurrentFoodCount / 2;
+	ClassFood::Side_BFood = CurrentFoodCount / 2;
 
 }
